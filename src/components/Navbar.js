@@ -21,5 +21,11 @@ const Links=[
 
 ]
 export default function Navbar() {
-  return (<RegularList resourceName="link" items={Links} ItemC={LinkC} /> )
+  return (
+   <div className='container'>
+      <div className='navbar'>
+        <RegularList resourceName="link" items={Links} ItemC={LinkC} /> 
+       </div>
+   </div>
+  )
 }
