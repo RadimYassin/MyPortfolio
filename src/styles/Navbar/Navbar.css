@@ -1,4 +1,17 @@
-.avbar {
-  background-color: red;
+
+.container {
+  background-color: rgb(212, 212, 212);
   width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+
+  
 }/*# sourceMappingURL=Navbar.css.map */
