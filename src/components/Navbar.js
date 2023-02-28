@@ -1,6 +1,7 @@
 import React from 'react'
 import LinkC from './LinkC'
 import RegularList from '../RegularList'
+import "../styles/Navbar/Navbar.css"
 const Links=[
     {
         id:1,
