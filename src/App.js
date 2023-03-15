@@ -1,21 +1,15 @@
-import { Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import About from "./pages/About";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-
-
+import React, { useState } from 'react'
+import Navbar from './Components/Navbar/Navbar';
+import Hero from './Components/Hero/Hero';
+import GlobleStyle from './GloblesStyles';
 
 function App() {
-
+const [click,setClick]=useState(false)
   return (
-    <div className="App">
-         <Navbar/>
-         <Routes>
-          <Route index path="/" element={<Home/>} />
-          <Route  path="/About" element={<About/>} />
-          <Route  path="/Projects"  element={<Projects/>} />
-         </Routes>
+    <div style={{backgroundColor:'#fcfcfc'}} className="App">
+          <GlobleStyle/>
+          <Navbar click={click} setClick={setClick}/>
+          <Hero/>
     </div>
   );
 }
