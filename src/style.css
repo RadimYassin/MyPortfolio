@@ -1,0 +1,59 @@
+
+  .app{
+
+  overflow: hidden;
+  }
+
+  .boxes ul{
+    display:block;
+    width:100%;
+    height:inherit;
+  }
+  .boxes ul{
+    list-style-type:none;
+  }
+  .boxes ul li:nth-child(1)
+  {
+    position:absolute;
+    left:10%;
+    height:30px;
+    width:30px;
+    background:rgba(0, 159, 58, 0.853);
+  }
+  .boxes ul li:nth-child(2)
+  {
+    position:absolute;
+    left:30%;
+    height:45px;
+    width:45px;
+    background:rgba(138, 24, 24, 0.2);
+  }
+  .boxes ul li:nth-child(3)
+  {
+    position:absolute;
+    left:50%;
+    height:70px;
+    width:70px;
+    background:rgba(208, 154, 154, 0.2);
+  }
+  .boxes li:nth-child(4)
+  {
+    position:absolute;
+    left:80%;
+    height:20px;
+    width:20px;
+    background:rgba(120, 86, 86, 0.2);
+  }
+  .boxes li{
+    animation:animate 15s linear 1s infinite;
+  }
+  
+  @keyframes animate{
+    from{
+      transform: translateY(+1500%) rotate(180deg)
+    }
+    to{
+      transform: translateY(-150%)
+        rotate(360deg)
+    }
+  }

@@ -61,18 +61,20 @@ display:flex;
 align-items:center;
 list-style:none;
 text-align:center;
+gap:20px;
 background-color:#fcfcfc;
 
 @media screen and (max-width:960px){
       display:flex;
       flex-direction:column;
       width:100%;
-      height:90vh;
+      height:80vh;
       position:absolute;
       top:80px;
       left:${({click})=>(click ? 0:'-100%')};
       opacity:1;
       transition:all 0.5 ease;
+      overflow:hidden;
   
     }
 
@@ -82,10 +84,7 @@ background-color:#fcfcfc;
 
 export const NavItem=styled.li`
     height:80px;
-    border-bottom:2px solid transparent;
-    &:hover{
-        border-bottom:3px solid  #2b79b6;
-    }
+   
 
     @media screen and (max-width:960px){
         width:100%;
@@ -96,19 +95,39 @@ export const NavItem=styled.li`
 `
 
 export const Navlinks=styled(Link)`
-       color :#2b79b6;
+     color:black;
     display:flex;
     align-items:center;
     text-decoration:none;
-    padding:0.5rem 1rem;
+
     height:100%;
+    position:relative;
+    &:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: 0;
+		margin: -5px 0;
+		background-color: red;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: all 0.4s ease-in-out 0s;
+	}
+	&:hover:before {
+		visibility: visible;
+		transform: scaleX(1);
+	}
+
+
     @media screen and (max-width:960px){
+        position:absolute;
       text-align:center;
       padding:2rem;
       width:100%;
       display:table;
       &:hover{
-        color:red;
+        
         transition:all 0.3s ease;
       }
     }

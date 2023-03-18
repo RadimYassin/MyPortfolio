@@ -50,7 +50,7 @@ function Navbar({click,setClick}) {
                     </NavItem>
                 )
             }
-            <button className='button'>resume</button>
+        
            
           
           

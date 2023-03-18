@@ -26,7 +26,6 @@ margin-right:auto;
 padding-left:40px;
 padding-right:40px;
 margin-top :${({mt})=>mt ? mt : 0};
-
 @media screen and (max-width:991px) {
     padding-left:30px;
 padding-right:30px;
