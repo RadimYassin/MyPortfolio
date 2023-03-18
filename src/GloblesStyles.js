@@ -20,12 +20,13 @@ export const  Container=styled.div`
 
 z-index:1;
 width:100%;
-max-width:1400px;
+max-width:1500px;
 margin-left:auto;
 margin-right:auto;
 padding-left:40px;
 padding-right:40px;
 margin-top :${({mt})=>mt ? mt : 0};
+
 @media screen and (max-width:991px) {
     padding-left:30px;
 padding-right:30px;

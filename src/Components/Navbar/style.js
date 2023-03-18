@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
  export const Nav=styled.nav`
     background-color:#fcfcfc;
     height:80px;
+
     display:flex;
     justify-content: center;
     align-items:center; 
@@ -25,7 +26,7 @@ export const NavContainer=styled(Container)`
 export const NavLogo = styled(Link)`
     
     color :#2b79b6;
-    justify-self:flex-start;
+
     cursor: pointer;
     text-decoration:none;
     font-size:2rem;
