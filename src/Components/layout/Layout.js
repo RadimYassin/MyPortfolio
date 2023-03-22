@@ -34,7 +34,7 @@ const ConatinerLayout=styled(Container)`
  flex-direction:column;
  justify-content:center;
  align-items:center;
- gap:10px;
+
 ${Container}
 
 `
