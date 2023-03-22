@@ -65,17 +65,19 @@ text-align:center;
 gap:20px;
 background-color:#fcfcfc;
 
+
 @media screen and (max-width:960px){
       display:flex;
       flex-direction:column;
       width:100%;
-      height:80vh;
+      height:90vh;
       position:absolute;
       top:80px;
       left:${({click})=>(click ? 0:'-100%')};
       opacity:1;
       transition:all 0.5 ease;
-      overflow:hidden;
+      z-index:999;
+
   
     }
 
@@ -100,17 +102,20 @@ export const Navlinks=styled(Link)`
     display:flex;
     align-items:center;
     text-decoration:none;
+ 
 
-    height:100%;
+   height:100%;
     position:relative;
     &:before {
 		content: "";
 		position: absolute;
+        
 		width: 100%;
-		height: 2px;
-		bottom: 0;
+		height: 5px;
+		bottom: 20px;
 		margin: -5px 0;
-		background-color: red;
+        border-radius:50px;
+		background-color: #3C99DC;
 		visibility: hidden;
 		transform: scaleX(0);
 		transition: all 0.4s ease-in-out 0s;
@@ -126,10 +131,12 @@ export const Navlinks=styled(Link)`
       text-align:center;
       padding:2rem;
       width:100%;
+     
       display:table;
-      &:hover{
-        
-        transition:all 0.3s ease;
-      }
+      &:hover:before {
+		visibility: visible;
+		transform: scaleX(0);
+	}
+    
     }
 `

@@ -4,7 +4,7 @@ import {Info ,Title,Hi,Paraghraphe,Des} from  './Style'
 
 export default function () {
   return (
-   <Container mt='7vw' >
+   <Container mt='8vw' >
 
 
 

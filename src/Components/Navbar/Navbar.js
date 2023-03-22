@@ -7,7 +7,7 @@ import {
   Nav, NavContainer, NavLogo, MobileIcon,NavItem,Navlinks,NavMenu
 
 } from './style'
-import "../styleScss/Style.css"
+
  const MenuLinks=[
     {
         id:1,
@@ -35,7 +35,7 @@ function Navbar({click,setClick}) {
     <IconContext.Provider value={{color:'#3C99DC'}}>
       <Nav>
         <NavContainer>
-          <NavLogo whileHover={{scale:1.1}} initial={{scale:1}} href='/home'>
+          <NavLogo href='/home'>
            
             RY.
           </NavLogo>
