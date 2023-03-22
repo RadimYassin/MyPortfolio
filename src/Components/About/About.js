@@ -22,7 +22,7 @@ export default function About() {
 
 const ContainerAbout=styled(Container)`
       width:90%;
-      margin-top:2vw;
+      margin-top:1vw;
 
 ${Container}
 `
