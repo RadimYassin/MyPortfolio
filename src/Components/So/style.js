@@ -14,6 +14,9 @@ export const ContainerSocial = styled.div`
   display:flex;
   justify-content:space-between;
   align-items:center;
+  @media screen and (max-width:991px) {
+    position: relative;
+}
 
 
 
@@ -30,6 +33,7 @@ export const Media = styled.div`
 
 export const MediaE = styled.div`
    transform:rotate(90deg);
+   
    
 `;
 
@@ -56,6 +60,13 @@ export const MediaInfo = styled.div`
      
      
       }
+      @media screen and (max-width:991px) {
+        transform:rotate(0);
+        &::before {
+      
+        display: none;}
+   
+}
   
 
 `;
@@ -83,6 +94,10 @@ font-family: sans-serif;
      
      
       }
+      @media screen and (max-width:991px) {
+    position: relative;
+    display:none;
+}
         
 
 `;

@@ -1,10 +1,11 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Container } from '../../GloblesStyles'
-import {Info ,Title,Hi,Paraghraphe,Des} from  './Style'
+import {Info ,Title,Hi,Paraghraphe,Des,Button} from  './Style'
 
 export default function () {
   return (
-   <Container mt='8vw' >
+   <ContainerHero>
 
 
 
@@ -15,11 +16,25 @@ export default function () {
             
                <Paraghraphe>I build things for the web.</Paraghraphe>
                <Des>I am a front-end developer passionate about creating visually appealing and user-friendly web applications using HTML, CSS, JavaScript, React, and redux</Des>
-               <button  className='button'>resume</button>
+               <Button  className='button'>resume</Button>
           
         </Title>
        </Info>
       
-   </Container>
+   </ContainerHero>
   )
 }
+
+
+
+const ContainerHero=styled.div`
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+@media screen and (max-width:960px){
+  margin-top:90px;
+  justify-content:space-around;
+align-items:stretch;
+    }
+`
