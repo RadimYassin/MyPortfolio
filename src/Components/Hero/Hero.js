@@ -29,6 +29,7 @@ export default function () {
 
 const ContainerHero=styled.div`
 height:90vh;
+width:90%;
 display:flex;
 justify-content:center;
 align-items:center;
